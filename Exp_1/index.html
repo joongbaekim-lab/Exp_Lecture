@@ -2660,8 +2660,8 @@ function render(){
     var exp=document.createElement('span');exp.className='lr-exp';exp.textContent=r.experiment||'';row.appendChild(exp);
     var rr=document.createElement('div');rr.className='lr-right';
     if(items.length){var fc=document.createElement('span');fc.className='chip';fc.style.cssText='background:var(--bg);color:var(--tx3)';fc.textContent='첨삭 '+items.length+'개';rr.appendChild(fc);}
-    var chip=document.createElement('span');chip.className='chip '+(isOk?'c-ok':'c-wait');chip.textContent=isOk?'&#9679; 첨삭 완료':'&#9675; 대기 중';rr.appendChild(chip);
-    var cta=document.createElement('span');cta.className='lr-view';cta.textContent=r.pdfBase64?'PDF 보기 &#8594;':'보기 &#8594;';rr.appendChild(cta);
+    var chip=document.createElement('span');chip.className='chip '+(isOk?'c-ok':'c-wait');chip.textContent=isOk?'● 첨삭 완료':'○ 대기 중';rr.appendChild(chip);
+    var cta=document.createElement('span');cta.className='lr-view';cta.textContent=r.pdfBase64?'PDF 보기 →':'보기 →';rr.appendChild(cta);
     row.appendChild(rr);grid.appendChild(row);
   });
   out.appendChild(grid);
